@@ -20,6 +20,22 @@
 {% extends "_layout" %}
 
 {% block main %}
-	<h1>{{ entry.title }}</h1>
-	{{ entry.body }}
+	<section class="homepage" 
+		{% set background = entry.background.first() %}
+		{% if background %}
+		style="background-image: url({{background.getUrl()}});"
+		{% endif %}
+	>
+		<div class="container">
+			{% block header %}
+				{% include "_containers/headerContent" %}
+			{% endblock %}
+			<h1 class="homepage-title">
+				{{ entry.screenTitle }}
+			</h1>
+			<div class="homepage-caption">
+				{{entry.body}}
+			</div>
+		</div>
+	</section>
 {% endblock %}

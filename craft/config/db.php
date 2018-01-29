@@ -25,7 +25,7 @@ return array(
         'port' => 8889,
         'user' => 'root', // The database username to connect with.
         'password' => 'root', // The database password to connect with.
-        'database' => 'craft_example', // The name of the database to select.
+        'database' => 'ark', // The name of the database to select.
     ),
 		/**
      * Environment: Development

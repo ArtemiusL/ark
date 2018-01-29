@@ -47,14 +47,14 @@
 		{# _WRAPPER CONTAINER - START #}
 		<div class="main-container">
 
-			{# HEADER #}
-			<header class="main-container--header">
-				{% block header %}{% endblock %}
-			</header>
 
 			{# MAIN #}
 			<main class="main-container--content" role="main">
-				{% block main %}{% endblock %}
+				{% block main %}
+					<header class="main-container--header">
+					{% block header %}{% endblock %}
+					</header>
+				{% endblock %}
 			</main>
 
 			{# FOOTER #}

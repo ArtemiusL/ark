@@ -1,3 +1,10 @@
 .menu {
-
+	display: flex;
+	list-style: none;
+	color: #fff;
+}
+.menu--link {
+	color: #FffffF;
+	font-size: 15px;
+	line-height: 17px;
 }

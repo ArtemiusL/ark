@@ -1,12 +1,12 @@
 {% extends "_webpack.templates/_webpack.template.wrapper" %}
 
 {# HEADER #}
-{% block header %}
-  {% include "_containers/headerContent" %}
-{% endblock %}
+
 
 {# MAIN #}
 {% block main %}
+	{% block header %}
+	{% endblock %}
 {% endblock %}
 
 

@@ -4,7 +4,10 @@
 
 {% set header = craft.globals.getSetByHandle('header') %}
 
-<header class="header-content">
-  <div class="header-content--text">{{ header.plainText }}</div>
+<header class="main-header">
+	<div class="main-header-logo">
+		<img src="{{siteUrl}}/static/images/ark-logo.png" alt="">
+	</div>
   {% include "_components/menu" with { menu: header.menu } %}
 </header>
+ 

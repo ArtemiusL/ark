@@ -1,0 +1,1 @@
+import './screenContent.scss';
