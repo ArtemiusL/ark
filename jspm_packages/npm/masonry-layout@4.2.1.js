@@ -1,0 +1,1 @@
+module.exports = require("npm:masonry-layout@4.2.1/masonry.js");

@@ -56,6 +56,13 @@
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "jquery": "^3.2.1",
+    "masonry-layout": "^4.2.1",
     "slick-carousel": "^1.8.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "masonry-layout": "npm:masonry-layout@^4.2.1"
+    },
+    "devDependencies": {}
   }
 }

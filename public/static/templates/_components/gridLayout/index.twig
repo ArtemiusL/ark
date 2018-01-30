@@ -1,0 +1,16 @@
+{#
+# gridLayout (required) - gridLayout field
+#}
+
+
+<div class="grid">
+	{% for key, value in gridLayout %}
+		{% set newKey = key + 1 %}
+		  <div class="grid-item grid-item--width{{newKey}}
+		  ">
+		  	<a href="#">
+		  		<img  src="{{ value.gridImage.first.url({width: value.widthImage, height: value.heightImage}) }}" alt="">
+		  	</a>
+		  </div>
+  {% endfor %}
+</div>

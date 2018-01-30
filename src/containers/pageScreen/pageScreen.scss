@@ -1,0 +1,23 @@
+.pageScreen {
+	min-height: 870px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+}
+.pageScreen-title {
+	font-size: 52px;
+	line-height: 64px;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	width: 400px;
+	margin-bottom: 25px;
+}
+.pageScreen-caption {
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0.5px 0.1px 0px #000;
+	width: 400px;
+}

@@ -23,6 +23,15 @@ switch (pathParams[1]) {
     console.log('Import "Example Page" modules');
     break;
 
+  case 'portfolio':
+    // Import the module
+    import('pages/portfolio').then(() => {
+      console.log('import -> portfolio.js');
+    });
+
+    console.log('Import "portfolio Page" modules');
+    break;
+
   // Fallback Page
   default:
     console.log('Import "default" modules');

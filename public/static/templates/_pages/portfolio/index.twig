@@ -1,5 +1,8 @@
 {% extends "_layout" %}
 
 {% block main %}
-
+	{% include "_containers/pageScreen" with { pageScreen: entry } %}
+	{% include "_components/gridLayout" with {
+	gridLayout: entry.gridLayout
+} %}
 {% endblock %}
