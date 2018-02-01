@@ -1,12 +1,13 @@
 import $ from 'jquery';
-import Masonry from 'masonry-layout'
+import Masonry from 'masonry-layout';
 import './gridLayout.scss';
 
-const grid = document.querySelector('.grid')
+var sizer = '.sizer3';
+const grid = document.querySelector('#gallery')
 const msnry = new Masonry(grid, {
   // options
-  itemSelector: '.grid-item',
-  columnWidth: 200,
+  itemSelector: '.item-masonry',
+  columnWidth: sizer,
   percentPosition: true
 });
 

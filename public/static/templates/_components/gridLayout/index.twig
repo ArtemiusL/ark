@@ -1,16 +1,47 @@
 {#
 # gridLayout (required) - gridLayout field
+{% switch block.type %}
+
+    {% case "ItemPhoto" %}
+      {{ block.gridLink }}  Type: Entries 
+      {{ block.gridImage }}  Type: Assets 
+      {{ block.sizeImage }}  Type: Radio Buttons 
+
+    {% case "itemText" %}
+      {{ block.gridlink }}  Type: Entries 
+      {{ block.gridTitle }}  Type: Plain Text 
+      {{ block.gridParagraf }}  Type: Plain Text 
+
+    {% default %}
 #}
+<div class="gridLayout" id="gallery">
+  {% for block in gridLayout %}
+    {% switch block.type %}
+      {% case "itemPhoto" %}
+        {% switch block.sizeImage.label %}
+          {% case "full" %}
+            <div class="item-masonry sizer1">
+              <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
+            </div>
 
+          {% case "large" %}
+            <div class="item-masonry sizer2">
+              <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
+            </div>
 
-<div class="grid">
-	{% for key, value in gridLayout %}
-		{% set newKey = key + 1 %}
-		  <div class="grid-item grid-item--width{{newKey}}
-		  ">
-		  	<a href="#">
-		  		<img  src="{{ value.gridImage.first.url({width: value.widthImage, height: value.heightImage}) }}" alt="">
-		  	</a>
-		  </div>
+          {% case "medium" %}
+            <div class="item-masonry sizer3">
+              <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
+            </div>
+        {% endswitch %}
+      {% case "itemText" %}
+        <div class="item-masonry item-masonry--text sizer3">
+              <div class="item-masonry__text">
+                <h3>{{block.gridTitle}}</h3>
+                <p>{{block.gridParagraf}}</p>
+              </div>
+              <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
+            </div>
+    {% endswitch %}
   {% endfor %}
 </div>
