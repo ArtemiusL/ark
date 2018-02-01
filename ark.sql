@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost:8889
--- Время создания: Янв 30 2018 г., 14:29
+-- Время создания: Фев 01 2018 г., 16:16
 -- Версия сервера: 5.6.35
 -- Версия PHP: 7.1.8
 
@@ -47,7 +47,10 @@ INSERT INTO `craft_assetfiles` (`id`, `sourceId`, `folderId`, `filename`, `kind`
 (12, 1, 1, 'work-6.jpg', 'image', 542, 470, 26884, '2018-01-30 12:49:14', '2018-01-30 12:49:14', '2018-01-30 12:49:14', 'c9f958a2-30f0-48c7-bdce-c7e942595939'),
 (13, 1, 1, 'work-5.jpg', 'image', 542, 470, 60685, '2018-01-30 12:49:34', '2018-01-30 12:49:34', '2018-01-30 12:49:34', '8247af2a-be07-4ccf-8141-ed09df2fdbb2'),
 (16, 1, 1, 'Img-01.jpg', 'image', 1067, 600, 124681, '2018-01-30 13:19:48', '2018-01-30 13:19:49', '2018-01-30 13:19:49', '9ab75715-6465-4e24-b4af-0cb8f2f01ec6'),
-(17, 1, 1, 'Img-02.jpg', 'image', 534, 600, 164105, '2018-01-30 13:19:49', '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'b8d174cf-7c18-44a7-a4c8-024462ab28e2');
+(17, 1, 1, 'Img-02.jpg', 'image', 534, 600, 164105, '2018-01-30 13:19:49', '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'b8d174cf-7c18-44a7-a4c8-024462ab28e2'),
+(23, 1, 1, 'saddle.png', 'image', 533, 200, 184443, '2018-02-01 14:51:57', '2018-02-01 14:51:58', '2018-02-01 14:52:18', '5490b762-cfea-4881-9c3a-6ac6eb7a765f'),
+(25, 1, 1, 'pokryshka.jpg', 'image', 534, 200, 28210, '2018-02-01 15:00:46', '2018-02-01 15:00:47', '2018-02-01 15:00:47', '85a83dc9-d769-4dbc-a4bf-932d925d2a75'),
+(26, 1, 1, 'ramma.jpg', 'image', 533, 600, 59844, '2018-02-01 15:00:47', '2018-02-01 15:00:47', '2018-02-01 15:00:47', '18e9539a-c1f3-4665-9d64-385ee3feab1f');
 
 -- --------------------------------------------------------
 
@@ -155,7 +158,11 @@ INSERT INTO `craft_assettransformindex` (`id`, `fileId`, `filename`, `format`, `
 (9, 16, 'Img-01.jpg', NULL, '_300x300_crop_center-center', 1, 1, 0, '2018-01-30 13:22:06', '2018-01-30 13:22:06', '2018-01-30 13:22:06', 'bbc21906-92fb-4f56-b560-6ee1c467c0f5'),
 (10, 17, 'Img-02.jpg', NULL, '_600x300_crop_center-center', 1, 1, 0, '2018-01-30 13:22:06', '2018-01-30 13:22:06', '2018-01-30 13:22:06', '0f313828-d91a-4f52-98de-f1487a535f76'),
 (11, 16, 'Img-01.jpg', NULL, '_1067x600_crop_center-center', 1, 1, 0, '2018-01-30 13:23:18', '2018-01-30 13:23:18', '2018-01-30 13:23:19', '26906c25-d550-453e-b233-79c784e8719a'),
-(12, 17, 'Img-02.jpg', NULL, '_534x600_crop_center-center', 1, 1, 0, '2018-01-30 13:23:18', '2018-01-30 13:23:18', '2018-01-30 13:23:19', 'eba9ff81-7c36-4ec6-925f-f497b8301edf');
+(12, 17, 'Img-02.jpg', NULL, '_534x600_crop_center-center', 1, 1, 0, '2018-01-30 13:23:18', '2018-01-30 13:23:18', '2018-01-30 13:23:19', 'eba9ff81-7c36-4ec6-925f-f497b8301edf'),
+(13, 16, 'Img-01.jpg', NULL, '_967x550_crop_center-center', 1, 1, 0, '2018-02-01 11:00:03', '2018-02-01 11:00:03', '2018-02-01 11:00:05', '49efed54-c6d6-4c96-b72a-067397c6de70'),
+(14, 17, 'Img-02.jpg', NULL, '_1067x600_crop_center-center', 1, 1, 0, '2018-02-01 12:33:30', '2018-02-01 12:33:30', '2018-02-01 12:33:33', 'fa6a33b4-8329-41f8-8b24-e6b157f3ecc8'),
+(15, 17, 'Img-02.jpg', NULL, '_34x600_crop_center-center', 1, 1, 0, '2018-02-01 12:33:56', '2018-02-01 12:33:56', '2018-02-01 12:33:59', '0bcadb22-ddfc-4297-beec-9b1dc8dea716'),
+(16, 16, 'Img-01.jpg', NULL, '_534x600_crop_center-center', 1, 1, 0, '2018-02-01 14:24:54', '2018-02-01 14:24:54', '2018-02-01 14:24:55', '7d70d790-3266-4173-a5cc-c5e8dd8aad5b');
 
 -- --------------------------------------------------------
 
@@ -244,6 +251,7 @@ CREATE TABLE `craft_content` (
   `field_plainText` text COLLATE utf8_unicode_ci,
   `field_screenTitle` varchar(60) COLLATE utf8_unicode_ci DEFAULT NULL,
   `field_screenCaption` text COLLATE utf8_unicode_ci,
+  `field_radioButtons` varchar(255) COLLATE utf8_unicode_ci DEFAULT 'medium',
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
@@ -253,20 +261,23 @@ CREATE TABLE `craft_content` (
 -- Дамп данных таблицы `craft_content`
 --
 
-INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_body`, `field_plainText`, `field_screenTitle`, `field_screenCaption`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 1, 'en', NULL, NULL, NULL, NULL, NULL, '2018-01-29 17:21:03', '2018-01-29 17:21:03', 'f123162d-4916-4b26-9955-48ee30554d5c'),
-(2, 2, 'en', 'Homepage', '<p>It’s true, this site doesn’t have a whole lot of content yet, but don’t worry. Our web developers have just installed the CMS, and they’re setting things up for the content editors this very moment. Soon Localhost will be an oasis of fresh perspectives, sharp analyses, and astute opinions that will keep you coming back again and again.</p>', NULL, 'I want to feel what you wanted. ', 'Trent from punchy pint when lets get some snag. Get a dog up ya moolah piece of piss trent from punchy slaps. Shazza got us some chuck a sickie heaps he hasn\'t got a kindie. As stands out like bush telly with as stands out like porky. She\'ll be right pretty spiffy trent from punchy cab sav.', '2018-01-29 17:21:08', '2018-01-29 22:51:58', '3f7e53f9-99f6-4ee2-a2a0-45d285e1f557'),
-(3, 3, 'en', 'We just installed Craft!', '<p>Craft is the CMS that’s powering Localhost. It’s beautiful, powerful, flexible, and easy-to-use, and it’s made by Pixel &amp; Tonic. We can’t wait to dive in and see what it’s capable of!</p><!--pagebreak--><p>This is even more captivating content, which you couldn’t see on the News index page because it was entered after a Page Break, and the News index template only likes to show the content on the first page.</p><p>Craft: a nice alternative to Word, if you’re making a website.</p>', NULL, NULL, NULL, '2018-01-29 17:21:08', '2018-01-29 17:21:08', '877f1b5a-d5f4-4008-ac06-fb26e638a64e'),
-(4, 4, 'en', NULL, NULL, 'Artem Konovalov development', NULL, NULL, '2018-01-29 17:28:25', '2018-01-30 11:39:54', '1ef82ac0-8cbf-436f-81c2-5bfe510363da'),
-(5, 6, 'en', 'Bg Colos', NULL, NULL, NULL, NULL, '2018-01-29 20:31:42', '2018-01-29 20:31:59', 'b0e1d110-e329-45c8-a36e-1bd6d7c82a93'),
-(6, 7, 'en', '2016 02 19 12 33 10', NULL, NULL, NULL, NULL, '2018-01-29 21:18:06', '2018-01-29 21:18:06', '6e5703d3-7d22-4263-990b-5356d29e38d6'),
-(7, 8, 'en', 'Portfolio', NULL, NULL, 'Мы умеем управлять разработкой', 'Посмотрите наши проекты и убедитесь в этом сами!', '2018-01-30 10:10:06', '2018-01-30 13:22:03', '0d008e7c-1b53-413d-997e-24e0551bb994'),
-(8, 9, 'en', 'Bicycle', NULL, NULL, NULL, NULL, '2018-01-30 10:17:18', '2018-01-30 10:17:18', 'd8bcb5f4-4431-423e-a263-46b575276c06'),
-(9, 10, 'en', 'Bicycle Dark', NULL, NULL, NULL, NULL, '2018-01-30 11:27:23', '2018-01-30 11:27:23', '4b748c2f-3be4-4ba0-81bb-3a8dc9f8e4f1'),
-(10, 12, 'en', 'Work 6', NULL, NULL, NULL, NULL, '2018-01-30 12:49:14', '2018-01-30 12:49:14', '2074f789-cd1d-4dcb-a499-cff76f4bf5d5'),
-(11, 13, 'en', 'Work 5', NULL, NULL, NULL, NULL, '2018-01-30 12:49:34', '2018-01-30 12:49:34', '2ccfe5c5-fc5b-4094-9eae-111173c73688'),
-(12, 16, 'en', 'Img 01', NULL, NULL, NULL, NULL, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'c427601e-99ee-400d-b309-2451204204e1'),
-(13, 17, 'en', 'Img 02', NULL, NULL, NULL, NULL, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'd794c4db-34f6-44a8-938e-ed7ede09c301');
+INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_body`, `field_plainText`, `field_screenTitle`, `field_screenCaption`, `field_radioButtons`, `dateCreated`, `dateUpdated`, `uid`) VALUES
+(1, 1, 'en', NULL, NULL, NULL, NULL, NULL, 'medium', '2018-01-29 17:21:03', '2018-01-29 17:21:03', 'f123162d-4916-4b26-9955-48ee30554d5c'),
+(2, 2, 'en', 'Homepage', '<p>It’s true, this site doesn’t have a whole lot of content yet, but don’t worry. Our web developers have just installed the CMS, and they’re setting things up for the content editors this very moment. Soon Localhost will be an oasis of fresh perspectives, sharp analyses, and astute opinions that will keep you coming back again and again.</p>', NULL, 'I want to feel what you wanted. ', 'Trent from punchy pint when lets get some snag. Get a dog up ya moolah piece of piss trent from punchy slaps. Shazza got us some chuck a sickie heaps he hasn\'t got a kindie. As stands out like bush telly with as stands out like porky. She\'ll be right pretty spiffy trent from punchy cab sav.', 'medium', '2018-01-29 17:21:08', '2018-01-29 22:51:58', '3f7e53f9-99f6-4ee2-a2a0-45d285e1f557'),
+(3, 3, 'en', 'We just installed Craft!', '<p>Craft is the CMS that’s powering Localhost. It’s beautiful, powerful, flexible, and easy-to-use, and it’s made by Pixel &amp; Tonic. We can’t wait to dive in and see what it’s capable of!</p><!--pagebreak--><p>This is even more captivating content, which you couldn’t see on the News index page because it was entered after a Page Break, and the News index template only likes to show the content on the first page.</p><p>Craft: a nice alternative to Word, if you’re making a website.</p>', NULL, NULL, NULL, 'medium', '2018-01-29 17:21:08', '2018-01-29 17:21:08', '877f1b5a-d5f4-4008-ac06-fb26e638a64e'),
+(4, 4, 'en', NULL, NULL, 'Artem Konovalov development', NULL, NULL, 'medium', '2018-01-29 17:28:25', '2018-01-30 11:39:54', '1ef82ac0-8cbf-436f-81c2-5bfe510363da'),
+(5, 6, 'en', 'Bg Colos', NULL, NULL, NULL, NULL, 'medium', '2018-01-29 20:31:42', '2018-01-29 20:31:59', 'b0e1d110-e329-45c8-a36e-1bd6d7c82a93'),
+(6, 7, 'en', '2016 02 19 12 33 10', NULL, NULL, NULL, NULL, 'medium', '2018-01-29 21:18:06', '2018-01-29 21:18:06', '6e5703d3-7d22-4263-990b-5356d29e38d6'),
+(7, 8, 'en', 'Portfolio', NULL, NULL, 'Мы умеем управлять разработкой', 'Посмотрите наши проекты и убедитесь в этом сами!', 'medium', '2018-01-30 10:10:06', '2018-02-01 15:07:19', '0d008e7c-1b53-413d-997e-24e0551bb994'),
+(8, 9, 'en', 'Bicycle', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 10:17:18', '2018-01-30 10:17:18', 'd8bcb5f4-4431-423e-a263-46b575276c06'),
+(9, 10, 'en', 'Bicycle Dark', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 11:27:23', '2018-01-30 11:27:23', '4b748c2f-3be4-4ba0-81bb-3a8dc9f8e4f1'),
+(10, 12, 'en', 'Work 6', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 12:49:14', '2018-01-30 12:49:14', '2074f789-cd1d-4dcb-a499-cff76f4bf5d5'),
+(11, 13, 'en', 'Work 5', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 12:49:34', '2018-01-30 12:49:34', '2ccfe5c5-fc5b-4094-9eae-111173c73688'),
+(12, 16, 'en', 'Img 01', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'c427601e-99ee-400d-b309-2451204204e1'),
+(13, 17, 'en', 'Img 02', NULL, NULL, NULL, NULL, 'medium', '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'd794c4db-34f6-44a8-938e-ed7ede09c301'),
+(14, 23, 'en', 'saddle', NULL, NULL, NULL, NULL, 'medium', '2018-02-01 14:51:57', '2018-02-01 14:52:18', 'bf27b08e-4ecc-4466-b2ec-16accb7acbdb'),
+(15, 25, 'en', 'Pokryshka', NULL, NULL, NULL, NULL, 'medium', '2018-02-01 15:00:47', '2018-02-01 15:00:47', '7c1ad1d5-a6a4-406e-8c18-f0e76af16e84'),
+(16, 26, 'en', 'Ramma', NULL, NULL, NULL, NULL, 'medium', '2018-02-01 15:00:47', '2018-02-01 15:00:47', '5b1b87a0-c7f2-488e-be2e-29ac36ee9904');
 
 -- --------------------------------------------------------
 
@@ -335,16 +346,24 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (5, 'MatrixBlock', 1, 0, '2018-01-29 17:42:48', '2018-01-30 11:39:54', 'ab017dc9-f24c-4be6-a312-c6492bfe00aa'),
 (6, 'Asset', 1, 0, '2018-01-29 20:31:42', '2018-01-29 20:31:59', 'cb2f7ebe-28a9-4650-8774-61e67ef5bb35'),
 (7, 'Asset', 1, 0, '2018-01-29 21:18:06', '2018-01-29 21:18:06', '140ae59b-0ec5-4670-b0c4-fe1c0168576a'),
-(8, 'Entry', 1, 0, '2018-01-30 10:10:06', '2018-01-30 13:22:03', '9ee8d8a5-c07c-4f96-83a1-79987fa96d1e'),
+(8, 'Entry', 1, 0, '2018-01-30 10:10:06', '2018-02-01 15:07:19', '9ee8d8a5-c07c-4f96-83a1-79987fa96d1e'),
 (9, 'Asset', 1, 0, '2018-01-30 10:17:18', '2018-01-30 10:17:18', '5de3c17a-3cc5-41e6-8473-623f78d2ddaa'),
 (10, 'Asset', 1, 0, '2018-01-30 11:27:23', '2018-01-30 11:27:23', 'da33e524-bbca-4aa2-89d4-390f460b92d4'),
 (11, 'MatrixBlock', 1, 0, '2018-01-30 11:36:55', '2018-01-30 11:39:54', '7154f684-82b5-4701-8d29-5c86ec3c9613'),
 (12, 'Asset', 1, 0, '2018-01-30 12:49:14', '2018-01-30 12:49:14', '74e33505-7811-44d2-9a6d-f577abb6e748'),
 (13, 'Asset', 1, 0, '2018-01-30 12:49:34', '2018-01-30 12:49:34', '5e6daec9-07e7-4d67-9fd8-953bbe9f2b84'),
-(14, 'MatrixBlock', 1, 0, '2018-01-30 12:49:39', '2018-01-30 13:22:03', 'adb6df07-2a47-46ec-892a-94791d60c0b3'),
-(15, 'MatrixBlock', 1, 0, '2018-01-30 12:49:39', '2018-01-30 13:22:03', 'bf8e11f3-9db9-48f8-9a49-1ff9f3574cfe'),
 (16, 'Asset', 1, 0, '2018-01-30 13:19:49', '2018-01-30 13:19:49', '28f15b91-65b7-4d6e-9cf2-7fcba239687b'),
-(17, 'Asset', 1, 0, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'e23716f2-0d05-4c0e-b2ed-8c70dea915d7');
+(17, 'Asset', 1, 0, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'e23716f2-0d05-4c0e-b2ed-8c70dea915d7'),
+(18, 'MatrixBlock', 1, 0, '2018-02-01 12:14:42', '2018-02-01 15:07:19', 'e50ecc3d-3ed7-4db7-9b0c-27b346de204e'),
+(20, 'MatrixBlock', 1, 0, '2018-02-01 12:33:28', '2018-02-01 15:07:19', '167e172f-7ba2-4048-ad2c-aec0d6a7c6fd'),
+(21, 'MatrixBlock', 1, 0, '2018-02-01 12:40:59', '2018-02-01 15:07:19', 'bc50211f-8d67-4324-af18-5e8785956a7c'),
+(22, 'MatrixBlock', 1, 0, '2018-02-01 12:40:59', '2018-02-01 15:07:19', '45b7ccbb-e48f-41e6-aa07-5bd758c8a341'),
+(23, 'Asset', 1, 0, '2018-02-01 14:51:57', '2018-02-01 14:52:18', 'e4aaefb5-715d-4219-b3d8-fb4a79331f46'),
+(24, 'MatrixBlock', 1, 0, '2018-02-01 14:52:31', '2018-02-01 15:07:19', '01000e12-6980-4f22-a6b7-48151126268e'),
+(25, 'Asset', 1, 0, '2018-02-01 15:00:47', '2018-02-01 15:00:47', '52147397-dc65-4c69-9669-923e6d60efb3'),
+(26, 'Asset', 1, 0, '2018-02-01 15:00:47', '2018-02-01 15:00:47', '359cd4a3-f3f6-4659-af80-eca695704bd9'),
+(27, 'MatrixBlock', 1, 0, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '64211f3c-a6f9-4a09-a664-a59663ad63cf'),
+(28, 'MatrixBlock', 1, 0, '2018-02-01 15:01:29', '2018-02-01 15:07:19', 'd8590fc6-43f1-4fd8-a83e-1132574b802c');
 
 -- --------------------------------------------------------
 
@@ -376,16 +395,24 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (5, 5, 'en', '', NULL, 1, '2018-01-29 17:42:48', '2018-01-30 11:39:54', '0449b8ef-b7f6-4879-beac-7a7c9f55212f'),
 (6, 6, 'en', 'bg-colos', NULL, 1, '2018-01-29 20:31:42', '2018-01-29 20:31:59', '8764d453-2937-4756-883f-5190ff6264e2'),
 (7, 7, 'en', '2016-02-19-12-33-10', NULL, 1, '2018-01-29 21:18:06', '2018-01-29 21:18:06', '3d982788-6afe-4787-b4f7-5de5075e503d'),
-(8, 8, 'en', 'portfolio', 'portfolio', 1, '2018-01-30 10:10:06', '2018-01-30 13:22:03', 'cdb3b677-7e5e-4d67-93ea-ba188e60e2cc'),
+(8, 8, 'en', 'portfolio', 'portfolio', 1, '2018-01-30 10:10:06', '2018-02-01 15:07:19', 'cdb3b677-7e5e-4d67-93ea-ba188e60e2cc'),
 (9, 9, 'en', 'bicycle', NULL, 1, '2018-01-30 10:17:18', '2018-01-30 10:17:18', 'a143932c-3147-4349-957a-f909c09051d1'),
 (10, 10, 'en', 'bicycle-dark', NULL, 1, '2018-01-30 11:27:24', '2018-01-30 11:27:24', '1fe668af-33a9-45e4-bd1f-e38b025fabb7'),
 (11, 11, 'en', '', NULL, 1, '2018-01-30 11:36:55', '2018-01-30 11:39:54', '41b08e2c-7218-43d6-873e-055def99b7be'),
 (12, 12, 'en', 'work-6', NULL, 1, '2018-01-30 12:49:14', '2018-01-30 12:49:14', '8331888e-008f-4064-889a-bc0674f3b153'),
 (13, 13, 'en', 'work-5', NULL, 1, '2018-01-30 12:49:34', '2018-01-30 12:49:34', 'cfeaf0e6-c980-409c-93fc-729176bf1b12'),
-(14, 14, 'en', '', NULL, 1, '2018-01-30 12:49:39', '2018-01-30 13:22:03', '056afe2d-c2dd-46e7-9e3f-400b488ac60d'),
-(15, 15, 'en', '', NULL, 1, '2018-01-30 12:49:39', '2018-01-30 13:22:03', 'e57a206f-ef75-4300-ae9d-3d6a34d48057'),
 (16, 16, 'en', 'img-01', NULL, 1, '2018-01-30 13:19:49', '2018-01-30 13:19:49', '72540362-b122-4741-b554-559b39e4e185'),
-(17, 17, 'en', 'img-02', NULL, 1, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'a54cacb6-48d6-45be-afbf-114758e8047c');
+(17, 17, 'en', 'img-02', NULL, 1, '2018-01-30 13:19:49', '2018-01-30 13:19:49', 'a54cacb6-48d6-45be-afbf-114758e8047c'),
+(18, 18, 'en', '', NULL, 1, '2018-02-01 12:14:42', '2018-02-01 15:07:19', '09f42411-1b62-4508-8b78-97772a9b77e4'),
+(20, 20, 'en', '', NULL, 1, '2018-02-01 12:33:28', '2018-02-01 15:07:19', '66de2b3a-a6fe-498b-978b-5f43d97957f5'),
+(21, 21, 'en', '', NULL, 1, '2018-02-01 12:40:59', '2018-02-01 15:07:19', '71bf6cd1-7e83-4c1e-b890-cfdf39eedd00'),
+(22, 22, 'en', '', NULL, 1, '2018-02-01 12:40:59', '2018-02-01 15:07:19', '945415cd-cab1-495f-af2e-a00edc4e98b9'),
+(23, 23, 'en', 'small-image', NULL, 1, '2018-02-01 14:51:58', '2018-02-01 14:52:18', '09ea3bc2-aa68-45c5-84fa-4a8c53884f66'),
+(24, 24, 'en', '', NULL, 1, '2018-02-01 14:52:31', '2018-02-01 15:07:19', '65b378c0-9e41-4dd9-8ecd-5cf725841637'),
+(25, 25, 'en', 'pokryshka', NULL, 1, '2018-02-01 15:00:47', '2018-02-01 15:00:47', '761bda8e-3a50-420b-b82d-751e7e49b560'),
+(26, 26, 'en', 'ramma', NULL, 1, '2018-02-01 15:00:47', '2018-02-01 15:00:47', 'b0dfa62b-14ff-434f-8120-c363aeeaba1e'),
+(27, 27, 'en', '', NULL, 1, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '07b66b5e-7936-4eee-8160-09310e05aec0'),
+(28, 28, 'en', '', NULL, 1, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '17d75b35-afd4-4963-92f4-4249b565e381');
 
 -- --------------------------------------------------------
 
@@ -429,7 +456,7 @@ CREATE TABLE `craft_entries` (
 INSERT INTO `craft_entries` (`id`, `sectionId`, `typeId`, `authorId`, `postDate`, `expiryDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (2, 1, 1, NULL, '2018-01-29 21:55:59', NULL, '2018-01-29 17:21:08', '2018-01-29 22:51:58', '9490cb8b-342c-41a5-854c-c242cf8f9e79'),
 (3, 2, 2, 1, '2018-01-29 17:21:08', NULL, '2018-01-29 17:21:08', '2018-01-29 17:21:08', '3fbca04a-40ed-41ce-bc2c-52a981c2aa55'),
-(8, 3, 3, NULL, '2018-01-30 10:21:39', NULL, '2018-01-30 10:10:06', '2018-01-30 13:22:03', 'f008e1e9-4ffe-40b3-8e14-d54d7a1785d4');
+(8, 3, 3, NULL, '2018-01-30 10:21:39', NULL, '2018-01-30 10:10:06', '2018-02-01 15:07:19', 'f008e1e9-4ffe-40b3-8e14-d54d7a1785d4');
 
 -- --------------------------------------------------------
 
@@ -525,7 +552,19 @@ INSERT INTO `craft_entryversions` (`id`, `entryId`, `sectionId`, `creatorId`, `l
 (17, 8, 3, 1, 'en', 3, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-01-30 11:27:27', '2018-01-30 11:27:27', '863cf1e0-56d2-4b21-b80f-365acfead16a'),
 (18, 8, 3, 1, 'en', 4, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"new1\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"12\"]}},\"new2\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"13\"]}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-01-30 12:49:39', '2018-01-30 12:49:39', '5533dc0d-26dd-49fa-b42b-c8108db62fc7'),
 (19, 8, 3, 1, 'en', 5, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"14\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"12\"]}},\"15\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"13\"]}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-01-30 12:51:08', '2018-01-30 12:51:08', 'e08e8760-7986-4859-92e6-01456f998d1b'),
-(20, 8, 3, 1, 'en', 6, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"14\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"16\"],\"widthImage\":\"1067\",\"heightImage\":\"600\"}},\"15\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"17\"],\"widthImage\":\"534\",\"heightImage\":\"600\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-01-30 13:22:03', '2018-01-30 13:22:03', '033bc5df-6566-44ed-aa36-0b0f599c9f0c');
+(20, 8, 3, 1, 'en', 6, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"14\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"16\"],\"widthImage\":\"1067\",\"heightImage\":\"600\"}},\"15\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"17\"],\"widthImage\":\"534\",\"heightImage\":\"600\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-01-30 13:22:03', '2018-01-30 13:22:03', '033bc5df-6566-44ed-aa36-0b0f599c9f0c'),
+(21, 8, 3, 1, 'en', 7, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"14\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"16\"],\"widthImage\":\"967\",\"heightImage\":\"550\"}},\"15\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"17\"],\"widthImage\":\"534\",\"heightImage\":\"600\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 11:00:01', '2018-02-01 11:00:01', 'bfeb5ad0-992b-46cb-96c5-4106988f60bf'),
+(22, 8, 3, 1, 'en', 8, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"14\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"15\":{\"type\":\"items\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"17\"],\"sizeImage\":\"\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 12:10:45', '2018-02-01 12:10:45', '2929ce43-ddac-43c3-acef-066cb38b3150'),
+(23, 8, 3, 1, 'en', 9, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"new1\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"new2\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"8\"],\"gridTitle\":\"dcwfwe\",\"gridParagraf\":\"wefwef\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 12:14:42', '2018-02-01 12:14:42', 'e7f4bf2c-1dc7-49ac-8b30-271b7da27810'),
+(24, 8, 3, 1, 'en', 10, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"new1\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"1\"}},\"19\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"8\"],\"gridTitle\":\"dcwfwe\",\"gridParagraf\":\"wefwef\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 12:33:28', '2018-02-01 12:33:28', '1baa62b8-bddd-4e61-ba9e-8bd622fc15a6'),
+(25, 8, 3, 1, 'en', 11, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"\"}},\"19\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"8\"],\"gridTitle\":\"dcwfwe\",\"gridParagraf\":\"wefwef\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 12:33:54', '2018-02-01 12:33:54', '99578459-6b24-4087-bbfa-f337670e66b7'),
+(26, 8, 3, 1, 'en', 12, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"\"}},\"new1\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"1\"}},\"new2\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 12:40:59', '2018-02-01 12:40:59', '1a33cca8-a0ac-4b9d-a906-0b8f268043f7'),
+(27, 8, 3, 1, 'en', 13, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"small\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"small\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 14:38:45', '2018-02-01 14:38:45', '9a66de51-487e-4a4b-a93d-dcc5e8f93f90'),
+(28, 8, 3, 1, 'en', 14, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"full\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"small\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 14:42:58', '2018-02-01 14:42:58', 'fbc893a7-248e-4624-9c4d-19e7409a78f9'),
+(29, 8, 3, 1, 'en', 15, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"full\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"small\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"new1\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"Bicycle\",\"gridParagraf\":\"\\u0412\\u0430\\u0448 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434 \\u0435\\u0449\\u0451 \\u043d\\u0438\\u043a\\u043e\\u0433\\u0434\\u0430 \\u043d\\u0435 \\u0431\\u044b\\u043b \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u0440\\u0430\\u0441\\u0438\\u0432\\u044b\\u043c \\u0438 \\u043f\\u0440\\u0438\\u0432\\u043b\\u0435\\u043a\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u043c! \\u0421\\u0430\\u0439\\u0442 \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d\\u0430 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434\\u043e\\u0432.\",\"gridImage\":[\"23\"]}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 14:52:31', '2018-02-01 14:52:31', '0ab843ee-f5ce-40ed-81b2-468172a5ea2a'),
+(30, 8, 3, 1, 'en', 16, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"24\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"Bicycle\",\"gridParagraf\":\"\\u0412\\u0430\\u0448 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434 \\u0435\\u0449\\u0451 \\u043d\\u0438\\u043a\\u043e\\u0433\\u0434\\u0430 \\u043d\\u0435 \\u0431\\u044b\\u043b \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u0440\\u0430\\u0441\\u0438\\u0432\\u044b\\u043c \\u0438 \\u043f\\u0440\\u0438\\u0432\\u043b\\u0435\\u043a\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u043c! \\u0421\\u0430\\u0439\\u0442 \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d\\u0430 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434\\u043e\\u0432.\",\"gridImage\":[\"23\"]}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 14:54:31', '2018-02-01 14:54:31', 'a7bdc458-b73a-46b8-83b1-aa5fbb8bd2fc'),
+(31, 8, 3, 1, 'en', 17, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"24\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"Bicycle\",\"gridParagraf\":\"\\u0412\\u0430\\u0448 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434 \\u0435\\u0449\\u0451 \\u043d\\u0438\\u043a\\u043e\\u0433\\u0434\\u0430 \\u043d\\u0435 \\u0431\\u044b\\u043b \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u0440\\u0430\\u0441\\u0438\\u0432\\u044b\\u043c \\u0438 \\u043f\\u0440\\u0438\\u0432\\u043b\\u0435\\u043a\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u043c! \\u0421\\u0430\\u0439\\u0442 \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d\\u0430 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434\\u043e\\u0432.\",\"gridImage\":[\"23\"]}},\"new1\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"26\"],\"sizeImage\":\"medium\"}},\"new2\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"\\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u0441\\u0430\\u0439\\u0442\",\"gridParagraf\":\"\\u0432\\u0441\\u0451 \\u043e\\u0447\\u0435\\u043d\\u044c \\u043a\\u0440\\u0443\\u0442\\u043e \\u043f\\u043e-\\u043f\\u0430\\u043f\\u043a\\u0438\\u043d\\u0441\\u043a\\u0438\",\"gridImage\":[\"25\"]}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 15:01:29', '2018-02-01 15:01:29', '42f7dcad-a01c-450c-8dae-2efbbb958ff6'),
+(32, 8, 3, 1, 'en', 18, '', '{\"typeId\":\"3\",\"authorId\":null,\"title\":\"Portfolio\",\"slug\":\"portfolio\",\"postDate\":1517307699,\"expiryDate\":null,\"enabled\":1,\"parentId\":null,\"fields\":{\"11\":[\"10\"],\"19\":{\"18\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"20\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"3\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"21\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"16\"],\"sizeImage\":\"large\"}},\"22\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"8\"],\"gridImage\":[\"17\"],\"sizeImage\":\"medium\"}},\"24\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"Bicycle\",\"gridParagraf\":\"\\u0412\\u0430\\u0448 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434 \\u0435\\u0449\\u0451 \\u043d\\u0438\\u043a\\u043e\\u0433\\u0434\\u0430 \\u043d\\u0435 \\u0431\\u044b\\u043b \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u0440\\u0430\\u0441\\u0438\\u0432\\u044b\\u043c \\u0438 \\u043f\\u0440\\u0438\\u0432\\u043b\\u0435\\u043a\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u043c! \\u0421\\u0430\\u0439\\u0442 \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d\\u0430 \\u0432\\u0435\\u043b\\u043e\\u0441\\u0438\\u043f\\u0435\\u0434\\u043e\\u0432.\",\"gridImage\":[\"23\"]}},\"28\":{\"type\":\"itemText\",\"enabled\":\"1\",\"fields\":{\"gridlink\":[\"3\"],\"gridTitle\":\"\\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u0441\\u0430\\u0439\\u0442\",\"gridParagraf\":\"\\u0432\\u0441\\u0451 \\u043e\\u0447\\u0435\\u043d\\u044c \\u043a\\u0440\\u0443\\u0442\\u043e \\u043f\\u043e-\\u043f\\u0430\\u043f\\u043a\\u0438\\u043d\\u0441\\u043a\\u0438\",\"gridImage\":[\"25\"]}},\"27\":{\"type\":\"itemPhoto\",\"enabled\":\"1\",\"fields\":{\"gridLink\":[\"2\"],\"gridImage\":[\"26\"],\"sizeImage\":\"medium\"}}},\"18\":\"\\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0448\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b \\u0438 \\u0443\\u0431\\u0435\\u0434\\u0438\\u0442\\u0435\\u0441\\u044c \\u0432 \\u044d\\u0442\\u043e\\u043c \\u0441\\u0430\\u043c\\u0438!\",\"17\":\"\\u041c\\u044b \\u0443\\u043c\\u0435\\u0435\\u043c \\u0443\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u043e\\u0439\"}}', '2018-02-01 15:07:19', '2018-02-01 15:07:19', '8e06cfe8-b04e-489a-9d84-451d2170aafd');
 
 -- --------------------------------------------------------
 
@@ -592,10 +631,13 @@ INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `re
 (59, 38, 30, 18, 0, 2, '2018-01-30 12:48:17', '2018-01-30 12:48:17', 'ad008b35-679a-4cb7-af0c-37a0cd0191fa'),
 (60, 38, 30, 17, 0, 3, '2018-01-30 12:48:17', '2018-01-30 12:48:17', '031ae20b-2bd9-47d3-9a18-0b1635e989e9'),
 (61, 38, 30, 19, 0, 4, '2018-01-30 12:48:17', '2018-01-30 12:48:17', '6f1490b9-07fb-42dc-ad66-7a6cd3792515'),
-(70, 42, 34, 20, 1, 1, '2018-01-30 13:21:23', '2018-01-30 13:21:23', '50919eeb-5b1d-4dab-94d7-466c5131d321'),
-(71, 42, 34, 21, 1, 2, '2018-01-30 13:21:23', '2018-01-30 13:21:23', '343cea54-f60d-4ea3-bfba-55c9e150fe42'),
-(72, 42, 34, 22, 0, 3, '2018-01-30 13:21:23', '2018-01-30 13:21:23', 'e4c884a0-b54b-4eca-9db6-0f0806b686d4'),
-(73, 42, 34, 23, 0, 4, '2018-01-30 13:21:23', '2018-01-30 13:21:23', '6659e231-5296-4ae3-a1b5-11fb88b69d5f');
+(134, 63, 55, 20, 1, 1, '2018-02-01 14:49:28', '2018-02-01 14:49:28', '3e320509-affc-4617-8fa5-5501380ede4e'),
+(135, 63, 55, 21, 1, 2, '2018-02-01 14:49:28', '2018-02-01 14:49:28', 'acc155c2-3b55-4c3e-aad1-54c91932e52d'),
+(136, 63, 55, 27, 0, 3, '2018-02-01 14:49:28', '2018-02-01 14:49:28', '48b87d8c-f6e4-4039-bc50-521a2d537699'),
+(137, 64, 56, 26, 1, 1, '2018-02-01 14:49:28', '2018-02-01 14:49:28', '33c74893-09af-42e1-9e8d-5f2a7cff5aa4'),
+(138, 64, 56, 24, 1, 2, '2018-02-01 14:49:28', '2018-02-01 14:49:28', 'fb2644c5-150d-465b-bc47-c89368be1052'),
+(139, 64, 56, 25, 1, 3, '2018-02-01 14:49:28', '2018-02-01 14:49:28', '85ef35cd-f8bf-4a24-b416-5673cdcdf334'),
+(140, 64, 56, 29, 1, 4, '2018-02-01 14:49:28', '2018-02-01 14:49:28', '6b3b05b9-5ae1-4e84-9665-cde682a2a557');
 
 -- --------------------------------------------------------
 
@@ -625,7 +667,8 @@ INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `u
 (16, 'SuperTable_Block', '2018-01-29 20:37:42', '2018-01-29 20:37:42', '81c6d3e1-f4bf-4d02-bce2-960a23b7da44'),
 (33, 'Entry', '2018-01-29 22:51:46', '2018-01-29 22:51:46', '8ae34630-e543-4e35-99ed-f0ba14027204'),
 (38, 'Entry', '2018-01-30 12:48:17', '2018-01-30 12:48:17', '63cdceac-3e49-4412-81f5-7ddedbba180c'),
-(42, 'MatrixBlock', '2018-01-30 13:21:23', '2018-01-30 13:21:23', 'f559b74a-d331-4570-85bb-01a2aed349ae');
+(63, 'MatrixBlock', '2018-02-01 14:49:28', '2018-02-01 14:49:28', '61d9bdcc-d49f-42d3-a766-10b928efedd9'),
+(64, 'MatrixBlock', '2018-02-01 14:49:28', '2018-02-01 14:49:28', '72da584c-e9ca-4656-baed-442336f1f9a6');
 
 -- --------------------------------------------------------
 
@@ -655,7 +698,8 @@ INSERT INTO `craft_fieldlayouttabs` (`id`, `layoutId`, `name`, `sortOrder`, `dat
 (9, 16, 'Content', 1, '2018-01-29 20:37:42', '2018-01-29 20:37:42', '06b474f8-2e06-41ac-8189-b9c32e1981a9'),
 (26, 33, 'Screen', 1, '2018-01-29 22:51:46', '2018-01-29 22:51:46', 'bc1ff2ec-b67b-4cbe-a589-b4eecbb99391'),
 (30, 38, 'Screen', 1, '2018-01-30 12:48:17', '2018-01-30 12:48:17', '44a00cb4-11b8-4b51-adaa-955a53788077'),
-(34, 42, 'Content', 1, '2018-01-30 13:21:23', '2018-01-30 13:21:23', '9f1fa3ea-b011-4ad7-87a0-2d9fc7e28c30');
+(55, 63, 'Content', 1, '2018-02-01 14:49:28', '2018-02-01 14:49:28', 'e835ca1d-1258-46e7-8e75-adf40bf1a629'),
+(56, 64, 'Content', 1, '2018-02-01 14:49:28', '2018-02-01 14:49:28', 'a05cf4b6-8d60-41cd-8362-e157709e7744');
 
 -- --------------------------------------------------------
 
@@ -699,11 +743,15 @@ INSERT INTO `craft_fields` (`id`, `groupId`, `name`, `handle`, `context`, `instr
 (14, NULL, 'Page Caption', 'pageCaption', 'superTableBlockType:1', '', 0, 'PlainText', '{\"placeholder\":\"\",\"maxLength\":\"300\",\"multiline\":\"\",\"initialRows\":\"4\"}', '2018-01-29 20:37:42', '2018-01-29 20:37:42', '783f076f-4c11-4987-857a-12ac98dd87b7'),
 (17, 2, 'Screen Title', 'screenTitle', 'global', '', 0, 'PlainText', '{\"placeholder\":\"\",\"maxLength\":\"60\",\"multiline\":\"\",\"initialRows\":\"4\"}', '2018-01-29 22:17:25', '2018-01-29 22:17:25', 'f9794a0b-ad94-4431-998a-28559fd0fe1e'),
 (18, 2, 'Screen Caption', 'screenCaption', 'global', '', 0, 'PlainText', '{\"placeholder\":\"\",\"maxLength\":\"400\",\"multiline\":\"\",\"initialRows\":\"4\"}', '2018-01-29 22:51:05', '2018-01-29 22:51:05', '738c934f-35ef-49bc-ae52-94c3f615994e'),
-(19, 1, 'Grid Layout', 'gridLayout', 'global', '', 0, 'Matrix', '{\"maxBlocks\":null}', '2018-01-30 12:48:04', '2018-01-30 13:21:23', '90f1e986-47f9-4a03-a8a4-c21c599dda58'),
-(20, NULL, 'GridLink', 'gridLink', 'matrixBlockType:3', '', 0, 'Entries', '{\"sources\":\"*\",\"limit\":\"1\",\"selectionLabel\":\"\"}', '2018-01-30 12:48:05', '2018-01-30 13:21:23', 'ab10b627-e0a3-4d4c-bbee-576b99ff3aa0'),
-(21, NULL, 'Grid Image', 'gridImage', 'matrixBlockType:3', '', 0, 'Assets', '{\"useSingleFolder\":\"\",\"sources\":\"*\",\"defaultUploadLocationSource\":\"1\",\"defaultUploadLocationSubpath\":\"\",\"singleUploadLocationSource\":\"1\",\"singleUploadLocationSubpath\":\"\",\"restrictFiles\":\"\",\"limit\":\"1\",\"viewMode\":\"list\",\"selectionLabel\":\"\"}', '2018-01-30 12:48:05', '2018-01-30 13:21:23', 'e4b6eb64-1354-469d-9c35-10aa46c45b19'),
-(22, NULL, 'Width Image', 'widthImage', 'matrixBlockType:3', '', 0, 'Number', '{\"min\":\"100\",\"max\":\"1100\",\"decimals\":\"0\"}', '2018-01-30 13:19:19', '2018-01-30 13:21:23', '7f5af6d6-eac2-4f69-b71d-047d6cb978c8'),
-(23, NULL, 'Height Image', 'heightImage', 'matrixBlockType:3', '', 0, 'Number', '{\"min\":\"100\",\"max\":\"1100\",\"decimals\":\"0\"}', '2018-01-30 13:19:19', '2018-01-30 13:21:23', '4f066618-baf3-43bf-925e-bc6964ed07d4');
+(19, 1, 'Grid Layout', 'gridLayout', 'global', '', 0, 'Matrix', '{\"maxBlocks\":null}', '2018-01-30 12:48:04', '2018-02-01 14:49:27', '90f1e986-47f9-4a03-a8a4-c21c599dda58'),
+(20, NULL, 'GridLink', 'gridLink', 'matrixBlockType:3', '', 0, 'Entries', '{\"sources\":\"*\",\"limit\":\"1\",\"selectionLabel\":\"\"}', '2018-01-30 12:48:05', '2018-02-01 14:49:28', 'ab10b627-e0a3-4d4c-bbee-576b99ff3aa0'),
+(21, NULL, 'Grid Image', 'gridImage', 'matrixBlockType:3', '', 0, 'Assets', '{\"useSingleFolder\":\"\",\"sources\":\"*\",\"defaultUploadLocationSource\":\"1\",\"defaultUploadLocationSubpath\":\"\",\"singleUploadLocationSource\":\"1\",\"singleUploadLocationSubpath\":\"\",\"restrictFiles\":\"\",\"limit\":\"1\",\"viewMode\":\"list\",\"selectionLabel\":\"\"}', '2018-01-30 12:48:05', '2018-02-01 14:49:28', 'e4b6eb64-1354-469d-9c35-10aa46c45b19'),
+(24, NULL, 'Grid Title', 'gridTitle', 'matrixBlockType:4', '', 0, 'PlainText', '{\"placeholder\":\"\",\"maxLength\":\"20\",\"multiline\":\"\",\"initialRows\":\"4\"}', '2018-02-01 11:37:25', '2018-02-01 14:49:28', '990b746e-b758-4172-939d-b9a7caea9aad'),
+(25, NULL, 'Grid paragraf', 'gridParagraf', 'matrixBlockType:4', '', 0, 'PlainText', '{\"placeholder\":\"\",\"maxLength\":\"250\",\"multiline\":\"\",\"initialRows\":\"4\"}', '2018-02-01 11:37:25', '2018-02-01 14:49:28', '20704e9b-d775-4006-80e9-e3eae89c366f'),
+(26, NULL, 'GridLink', 'gridlink', 'matrixBlockType:4', '', 0, 'Entries', '{\"sources\":\"*\",\"limit\":\"1\",\"selectionLabel\":\"\"}', '2018-02-01 11:41:39', '2018-02-01 14:49:28', '5c620089-08b0-4776-913c-27cde2c0f162'),
+(27, NULL, 'Size image', 'sizeImage', 'matrixBlockType:3', 'You can choose image size', 0, 'RadioButtons', '{\"options\":[{\"label\":\"full\",\"value\":\"full\",\"default\":\"\"},{\"label\":\"large\",\"value\":\"large\",\"default\":\"\"},{\"label\":\"medium\",\"value\":\"medium\",\"default\":\"1\"},{\"label\":\"small\",\"value\":\"small\",\"default\":\"\"}]}', '2018-02-01 11:44:10', '2018-02-01 14:49:28', '2ba9a101-a710-4953-b783-3c7a7128c9d4'),
+(28, 1, 'radio buttons', 'radioButtons', 'global', '', 0, 'RadioButtons', '{\"options\":[{\"label\":\"full\",\"value\":\"full\",\"default\":\"\"},{\"label\":\"large\",\"value\":\"large\",\"default\":\"\"},{\"label\":\"medium\",\"value\":\"medium\",\"default\":\"1\"},{\"label\":\"small\",\"value\":\"small\",\"default\":\"\"}]}', '2018-02-01 14:36:31', '2018-02-01 14:36:31', '186b0d64-dd4e-4328-b71e-efad360fdc35'),
+(29, NULL, 'Grid Image', 'gridImage', 'matrixBlockType:4', '', 0, 'Assets', '{\"useSingleFolder\":\"\",\"sources\":\"*\",\"defaultUploadLocationSource\":\"1\",\"defaultUploadLocationSubpath\":\"\",\"singleUploadLocationSource\":\"1\",\"singleUploadLocationSubpath\":\"\",\"restrictFiles\":\"\",\"limit\":\"1\",\"viewMode\":\"list\",\"selectionLabel\":\"\"}', '2018-02-01 14:49:28', '2018-02-01 14:49:28', 'e10b4ef9-9905-499c-9db2-1781cc948d44');
 
 -- --------------------------------------------------------
 
@@ -802,8 +850,13 @@ CREATE TABLE `craft_matrixblocks` (
 INSERT INTO `craft_matrixblocks` (`id`, `ownerId`, `fieldId`, `typeId`, `sortOrder`, `ownerLocale`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (5, 4, 4, 1, 1, NULL, '2018-01-29 17:42:49', '2018-01-30 11:39:54', '86019e51-573c-48c0-aa81-b3fb8c820c5b'),
 (11, 4, 4, 1, 2, NULL, '2018-01-30 11:36:55', '2018-01-30 11:39:54', '90cf03db-89dd-41e7-95c0-c38ccbfdfb36'),
-(14, 8, 19, 3, 1, NULL, '2018-01-30 12:49:39', '2018-01-30 13:22:03', '4bad033c-4309-497b-9d3d-78229aba42d5'),
-(15, 8, 19, 3, 2, NULL, '2018-01-30 12:49:39', '2018-01-30 13:22:03', '47603755-2562-46b0-8776-f968488eac8b');
+(18, 8, 19, 3, 1, NULL, '2018-02-01 12:14:42', '2018-02-01 15:07:19', '57088d6e-9910-403b-a00c-35a61ee3fa08'),
+(20, 8, 19, 3, 2, NULL, '2018-02-01 12:33:28', '2018-02-01 15:07:19', '934b1f5a-edce-4dbb-b6ce-0f06bd35b300'),
+(21, 8, 19, 3, 3, NULL, '2018-02-01 12:40:59', '2018-02-01 15:07:19', '242be158-6b01-4724-8ba2-9ce306354a5a'),
+(22, 8, 19, 3, 4, NULL, '2018-02-01 12:40:59', '2018-02-01 15:07:19', '79b78a85-6235-4b14-9f47-1db941df2cf2'),
+(24, 8, 19, 4, 5, NULL, '2018-02-01 14:52:31', '2018-02-01 15:07:19', 'a54bec70-7d15-4db9-85bd-9fc5a869fdc6'),
+(27, 8, 19, 3, 7, NULL, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '013bb18b-c5df-4b4f-978b-0bbb27e42da6'),
+(28, 8, 19, 4, 6, NULL, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '65d0331b-003e-4b1a-9f02-8429fcb0ad8a');
 
 -- --------------------------------------------------------
 
@@ -830,7 +883,8 @@ CREATE TABLE `craft_matrixblocktypes` (
 INSERT INTO `craft_matrixblocktypes` (`id`, `fieldId`, `fieldLayoutId`, `name`, `handle`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 4, 11, 'EntryLink', 'entryLink', 1, '2018-01-29 17:41:20', '2018-01-29 17:47:00', '4e87ad27-24be-443e-b4d1-e0517ac1707d'),
 (2, 4, 12, 'Outer Link', 'outerLink', 2, '2018-01-29 17:44:34', '2018-01-29 17:47:01', 'b5a21773-c47b-4ebb-8b93-a2a714bc957b'),
-(3, 19, 42, 'Items', 'items', 1, '2018-01-30 12:48:05', '2018-01-30 13:21:23', 'f90cd9a5-ecb1-42b1-bee3-2d4f5cfc05d8');
+(3, 19, 63, 'ItemPhoto', 'itemPhoto', 1, '2018-01-30 12:48:05', '2018-02-01 14:49:28', 'f90cd9a5-ecb1-42b1-bee3-2d4f5cfc05d8'),
+(4, 19, 64, 'itemText', 'itemText', 2, '2018-02-01 11:37:25', '2018-02-01 14:49:28', '705b302b-70e1-4abd-b728-c5d19157dce0');
 
 -- --------------------------------------------------------
 
@@ -842,8 +896,9 @@ CREATE TABLE `craft_matrixcontent_gridlayout` (
   `id` int(11) NOT NULL,
   `elementId` int(11) NOT NULL,
   `locale` char(12) COLLATE utf8_unicode_ci NOT NULL,
-  `field_items_widthImage` smallint(4) UNSIGNED DEFAULT '0',
-  `field_items_heightImage` smallint(4) UNSIGNED DEFAULT '0',
+  `field_itemText_gridTitle` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `field_itemText_gridParagraf` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `field_itemPhoto_sizeImage` varchar(255) COLLATE utf8_unicode_ci DEFAULT 'medium',
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
@@ -853,9 +908,14 @@ CREATE TABLE `craft_matrixcontent_gridlayout` (
 -- Дамп данных таблицы `craft_matrixcontent_gridlayout`
 --
 
-INSERT INTO `craft_matrixcontent_gridlayout` (`id`, `elementId`, `locale`, `field_items_widthImage`, `field_items_heightImage`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 14, 'en', 1067, 600, '2018-01-30 12:49:39', '2018-01-30 13:22:03', 'a2f64a78-d41b-455f-9562-0e859eb3267c'),
-(2, 15, 'en', 534, 600, '2018-01-30 12:49:39', '2018-01-30 13:22:03', '258316ab-7cd0-4022-8078-5d5074dfa3f9');
+INSERT INTO `craft_matrixcontent_gridlayout` (`id`, `elementId`, `locale`, `field_itemText_gridTitle`, `field_itemText_gridParagraf`, `field_itemPhoto_sizeImage`, `dateCreated`, `dateUpdated`, `uid`) VALUES
+(3, 18, 'en', NULL, NULL, 'large', '2018-02-01 12:14:42', '2018-02-01 15:07:19', '76cc0d65-4f0e-4e36-b85a-70a0d94d9097'),
+(5, 20, 'en', NULL, NULL, 'medium', '2018-02-01 12:33:28', '2018-02-01 15:07:19', '710f0d3c-fc73-4af0-a2d1-b0fada062d6b'),
+(6, 21, 'en', NULL, NULL, 'large', '2018-02-01 12:40:59', '2018-02-01 15:07:19', 'e25bd02f-2688-4352-9891-77c7a3f545dd'),
+(7, 22, 'en', NULL, NULL, 'medium', '2018-02-01 12:40:59', '2018-02-01 15:07:19', 'a8d4c3c6-442f-415b-b4a7-cee1ef41ac9b'),
+(8, 24, 'en', 'Bicycle', 'Ваш велосипед ещё никогда не был таким красивым и привлекательным! Сайт лучшего магазина велосипедов.', NULL, '2018-02-01 14:52:31', '2018-02-01 15:07:19', 'a61bb7c4-2548-4762-a09e-ca7af8f635fe'),
+(9, 27, 'en', NULL, NULL, 'medium', '2018-02-01 15:01:29', '2018-02-01 15:07:19', '6d3975ec-8f20-49be-97f8-d62b1ba1f6c1'),
+(10, 28, 'en', 'другой сайт', 'всё очень круто по-папкински', NULL, '2018-02-01 15:01:29', '2018-02-01 15:07:19', '5851de2d-c346-4d51-8725-bf725c277501');
 
 -- --------------------------------------------------------
 
@@ -1053,10 +1113,10 @@ CREATE TABLE `craft_plugins` (
 --
 
 INSERT INTO `craft_plugins` (`id`, `class`, `version`, `schemaVersion`, `licenseKey`, `licenseKeyStatus`, `enabled`, `settings`, `installDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'CheatSheet', '1.2.1', NULL, NULL, 'unknown', 1, NULL, '2018-01-29 17:30:02', '2018-01-29 17:30:02', '2018-01-29 17:30:02', '13893226-a649-4ab1-a8be-fa5ace75d525'),
-(2, 'Neo', '1.5.0', '1.5.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:03', '2018-01-29 17:30:03', '2018-01-29 17:30:03', '102997c0-1118-45d0-8e11-92d665c400f8'),
-(3, 'QuickField', '0.3.4', '1.0.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:08', '2018-01-29 17:30:08', '2018-01-29 17:30:08', 'e3783149-8f63-4728-aecb-4a24cacf1a5b'),
-(4, 'SuperTable', '1.0.6', '1.0.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:08', '2018-01-29 17:30:08', '2018-01-29 17:30:08', 'fbbb21b2-de65-4181-8511-b254f0f6cb3b');
+(1, 'CheatSheet', '1.2.1', NULL, NULL, 'unknown', 1, NULL, '2018-01-29 17:30:02', '2018-01-29 17:30:02', '2018-01-31 20:43:27', '13893226-a649-4ab1-a8be-fa5ace75d525'),
+(2, 'Neo', '1.5.0', '1.5.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:03', '2018-01-29 17:30:03', '2018-01-31 20:43:27', '102997c0-1118-45d0-8e11-92d665c400f8'),
+(3, 'QuickField', '0.3.4', '1.0.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:08', '2018-01-29 17:30:08', '2018-01-31 20:43:27', 'e3783149-8f63-4728-aecb-4a24cacf1a5b'),
+(4, 'SuperTable', '1.0.6', '1.0.0', NULL, 'unknown', 1, NULL, '2018-01-29 17:30:08', '2018-01-29 17:30:08', '2018-01-31 20:43:27', 'fbbb21b2-de65-4181-8511-b254f0f6cb3b');
 
 -- --------------------------------------------------------
 
@@ -1101,11 +1161,21 @@ INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `tar
 (10, 11, 2, NULL, 6, 1, '2018-01-29 22:51:58', '2018-01-29 22:51:58', '1367fad3-4905-4023-9b4f-f467abf2867a'),
 (15, 5, 5, NULL, 2, 1, '2018-01-30 11:39:54', '2018-01-30 11:39:54', '7d3595cc-701f-4748-88f7-5a465220d3f1'),
 (16, 5, 11, NULL, 8, 1, '2018-01-30 11:39:54', '2018-01-30 11:39:54', '7f3268c4-fe20-47da-b9a9-36286aeb9d4b'),
-(27, 11, 8, NULL, 10, 1, '2018-01-30 13:22:03', '2018-01-30 13:22:03', 'fec1444e-1a6f-42d3-8f0f-9e9a1007608b'),
-(28, 20, 14, NULL, 3, 1, '2018-01-30 13:22:03', '2018-01-30 13:22:03', '77ca9be7-6d0a-4437-a850-ae4c45470cda'),
-(29, 21, 14, NULL, 16, 1, '2018-01-30 13:22:03', '2018-01-30 13:22:03', 'c67002cf-aa9d-4dc8-b240-4bd5e645334e'),
-(30, 20, 15, NULL, 2, 1, '2018-01-30 13:22:03', '2018-01-30 13:22:03', '8e63a227-68b2-43fe-a0fc-c4dc8a9c8212'),
-(31, 21, 15, NULL, 17, 1, '2018-01-30 13:22:03', '2018-01-30 13:22:03', '95e6b1f2-a2fa-42f3-b664-c8456e4865c9');
+(118, 11, 8, NULL, 10, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', 'c709f522-d4d7-4930-a6fa-67a87cef6fa4'),
+(119, 20, 18, NULL, 2, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '69b83cfb-2736-442b-a628-131e20b3ca2c'),
+(120, 21, 18, NULL, 16, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', 'dac970cc-b96c-4ca7-96f3-51143d95d661'),
+(121, 20, 20, NULL, 3, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', 'bbd485fe-20bc-4b4c-8a11-23a75c2425bc'),
+(122, 21, 20, NULL, 17, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '6aa9a0d3-1dd9-44ba-9298-542378984506'),
+(123, 20, 21, NULL, 8, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '159518b8-a6f5-44c8-a452-42a81295b713'),
+(124, 21, 21, NULL, 16, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '5689e284-31c9-486d-a931-23089068fb7f'),
+(125, 20, 22, NULL, 8, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '04904651-e85b-4107-9632-397cbc6c83b4'),
+(126, 21, 22, NULL, 17, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '3a8ca999-3e57-48a6-ab6d-c201abbd177d'),
+(127, 26, 24, NULL, 3, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '3c96cbe7-37d2-491d-9e74-e45e4cc53255'),
+(128, 29, 24, NULL, 23, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '4ce111dc-6ed6-4641-86c7-cc1c36c05037'),
+(129, 26, 28, NULL, 3, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '1b0314cd-5fa0-4e59-92e6-d6310e5846d5'),
+(130, 29, 28, NULL, 25, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', 'd589c9a6-3b83-4245-827f-ecf3dbe8715f'),
+(131, 20, 27, NULL, 2, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', '69a09b3b-6b51-44b0-b478-d9b74ef90d2d'),
+(132, 21, 27, NULL, 26, 1, '2018-02-01 15:07:19', '2018-02-01 15:07:19', 'd903c0f7-4eca-4565-b9d3-714d878f1ac6');
 
 -- --------------------------------------------------------
 
@@ -1208,13 +1278,10 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (13, 'kind', 0, 'en', ' image '),
 (13, 'slug', 0, 'en', ' work 5 '),
 (13, 'title', 0, 'en', ' work 5 '),
-(8, 'field', 19, 'en', ' img 01 we just installed craft 600 1067 img 02 homepage 600 534 '),
-(14, 'field', 20, 'en', ' we just installed craft '),
-(14, 'field', 21, 'en', ' img 01 '),
-(14, 'slug', 0, 'en', ''),
-(15, 'field', 20, 'en', ' homepage '),
-(15, 'field', 21, 'en', ' img 02 '),
-(15, 'slug', 0, 'en', ''),
+(8, 'field', 19, 'en', ' img 01 homepage large img 02 we just installed craft medium img 01 portfolio large img 02 portfolio medium saddle ваш велосипед ещё никогда не был таким красивым и привлекательным сайт лучшего магазина велосипедов bicycle we just installed craft pokryshka всё очень круто по папкински другой сайт we just installed craft ramma homepage medium '),
+(18, 'slug', 0, 'en', ''),
+(18, 'field', 27, 'en', ' large '),
+(18, 'field', 20, 'en', ' homepage '),
 (16, 'filename', 0, 'en', ' img 01 jpg '),
 (16, 'extension', 0, 'en', ' jpg '),
 (16, 'kind', 0, 'en', ' image '),
@@ -1225,10 +1292,48 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (17, 'kind', 0, 'en', ' image '),
 (17, 'slug', 0, 'en', ' img 02 '),
 (17, 'title', 0, 'en', ' img 02 '),
-(14, 'field', 22, 'en', ' 1067 '),
-(14, 'field', 23, 'en', ' 600 '),
-(15, 'field', 22, 'en', ' 534 '),
-(15, 'field', 23, 'en', ' 600 ');
+(23, 'filename', 0, 'en', ' saddle png '),
+(18, 'field', 21, 'en', ' img 01 '),
+(20, 'field', 20, 'en', ' we just installed craft '),
+(20, 'field', 21, 'en', ' img 02 '),
+(20, 'field', 27, 'en', ' medium '),
+(20, 'slug', 0, 'en', ''),
+(21, 'field', 20, 'en', ' portfolio '),
+(21, 'field', 21, 'en', ' img 01 '),
+(21, 'field', 27, 'en', ' large '),
+(21, 'slug', 0, 'en', ''),
+(22, 'field', 20, 'en', ' portfolio '),
+(22, 'field', 21, 'en', ' img 02 '),
+(22, 'field', 27, 'en', ' medium '),
+(22, 'slug', 0, 'en', ''),
+(23, 'extension', 0, 'en', ' png '),
+(23, 'kind', 0, 'en', ' image '),
+(23, 'slug', 0, 'en', ' small image '),
+(23, 'title', 0, 'en', ' saddle '),
+(24, 'field', 26, 'en', ' we just installed craft '),
+(24, 'field', 24, 'en', ' bicycle '),
+(24, 'field', 25, 'en', ' ваш велосипед ещё никогда не был таким красивым и привлекательным сайт лучшего магазина велосипедов '),
+(24, 'field', 29, 'en', ' saddle '),
+(24, 'slug', 0, 'en', ''),
+(25, 'filename', 0, 'en', ' pokryshka jpg '),
+(25, 'extension', 0, 'en', ' jpg '),
+(25, 'kind', 0, 'en', ' image '),
+(25, 'slug', 0, 'en', ' pokryshka '),
+(25, 'title', 0, 'en', ' pokryshka '),
+(26, 'filename', 0, 'en', ' ramma jpg '),
+(26, 'extension', 0, 'en', ' jpg '),
+(26, 'kind', 0, 'en', ' image '),
+(26, 'slug', 0, 'en', ' ramma '),
+(26, 'title', 0, 'en', ' ramma '),
+(27, 'field', 20, 'en', ' homepage '),
+(27, 'field', 21, 'en', ' ramma '),
+(27, 'field', 27, 'en', ' medium '),
+(27, 'slug', 0, 'en', ''),
+(28, 'field', 26, 'en', ' we just installed craft '),
+(28, 'field', 24, 'en', ' другой сайт '),
+(28, 'field', 25, 'en', ' всё очень круто по папкински '),
+(28, 'field', 29, 'en', ' pokryshka '),
+(28, 'slug', 0, 'en', '');
 
 -- --------------------------------------------------------
 
@@ -1307,7 +1412,10 @@ CREATE TABLE `craft_sessions` (
 
 INSERT INTO `craft_sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'c660947d9ed8f6f43f82dcca1b9614a05ddcb83dczozMjoiQnU4djVmQWswWk16UGNtRmhXbVBHOW1QdGhjS3lkWEYiOw==', '2018-01-29 17:21:07', '2018-01-29 17:21:07', '681fc3d5-6278-4ca5-9655-e10b73b93a97'),
-(2, 1, '0967287ab8f6408b259528c3f66ad76a2996bf64czozMjoiWHdVWnl3cnVVa0xUc2VtRFNnbHBRaGtaTjQ2N2JqY08iOw==', '2018-01-30 10:06:25', '2018-01-30 10:06:25', '3fb18429-586c-45d7-a6fa-73234c52d7aa');
+(2, 1, '0967287ab8f6408b259528c3f66ad76a2996bf64czozMjoiWHdVWnl3cnVVa0xUc2VtRFNnbHBRaGtaTjQ2N2JqY08iOw==', '2018-01-30 10:06:25', '2018-01-30 10:06:25', '3fb18429-586c-45d7-a6fa-73234c52d7aa'),
+(3, 1, 'd729aa6538ae270c2e2fa4f9c8eedd5d35916a7fczozMjoiR0ljS3FxNTZJcEFTMmRpTUFTYktKdEN0ZjZNQUp6c1MiOw==', '2018-01-31 20:43:12', '2018-01-31 20:43:12', '564e997b-9efb-4902-a551-70b699cc9bbd'),
+(4, 1, 'f9c1fa325986537925f6380c0254d11d8c96b108czozMjoiUHJsS3djbEpBZE9VTkJpSVVkeUI4T0hNUXM2TVpHVHUiOw==', '2018-02-01 10:06:42', '2018-02-01 10:06:42', 'c2d4290e-4f54-4988-9179-193dbb638f1b'),
+(5, 1, 'd49d92518f38469b514ccddf8cf06ae81d716bd7czozMjoiSkNmb0FLelZsUGtjQU5ZUHJ6T2t4VFhueFExaXlFSFUiOw==', '2018-02-01 10:06:46', '2018-02-01 10:06:46', 'b9f1d808-6440-4978-a741-a145a3ec2246');
 
 -- --------------------------------------------------------
 
@@ -1685,7 +1793,7 @@ CREATE TABLE `craft_users` (
 --
 
 INSERT INTO `craft_users` (`id`, `username`, `photo`, `firstName`, `lastName`, `email`, `password`, `preferredLocale`, `weekStartDay`, `admin`, `client`, `locked`, `suspended`, `pending`, `archived`, `lastLoginDate`, `lastLoginAttemptIPAddress`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'Artem', NULL, NULL, NULL, 'lamber95@icloud.com', '$2y$13$ODM0pRC5qm8W9VSvCP2fF.CDYXbZ1yL4tr12JP.Y6bHsqDbgD1wO.', NULL, 0, 1, 0, 0, 0, 0, 0, '2018-01-30 10:06:25', '::1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '2018-01-29 17:21:03', '2018-01-29 17:21:04', '2018-01-30 10:06:25', '2fe95b88-e61a-4072-a8bc-a558fb587a73');
+(1, 'Artem', NULL, NULL, NULL, 'lamber95@icloud.com', '$2y$13$ODM0pRC5qm8W9VSvCP2fF.CDYXbZ1yL4tr12JP.Y6bHsqDbgD1wO.', NULL, 0, 1, 0, 0, 0, 0, 0, '2018-02-01 10:06:46', '::1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '2018-01-29 17:21:03', '2018-01-29 17:21:04', '2018-02-01 10:06:46', '2fe95b88-e61a-4072-a8bc-a558fb587a73');
 
 -- --------------------------------------------------------
 
@@ -2295,7 +2403,7 @@ ALTER TABLE `craft_assetsources`
 -- AUTO_INCREMENT для таблицы `craft_assettransformindex`
 --
 ALTER TABLE `craft_assettransformindex`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `craft_assettransforms`
 --
@@ -2315,7 +2423,7 @@ ALTER TABLE `craft_categorygroups_i18n`
 -- AUTO_INCREMENT для таблицы `craft_content`
 --
 ALTER TABLE `craft_content`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `craft_deprecationerrors`
 --
@@ -2330,12 +2438,12 @@ ALTER TABLE `craft_elementindexsettings`
 -- AUTO_INCREMENT для таблицы `craft_elements`
 --
 ALTER TABLE `craft_elements`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT для таблицы `craft_elements_i18n`
 --
 ALTER TABLE `craft_elements_i18n`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT для таблицы `craft_emailmessages`
 --
@@ -2355,7 +2463,7 @@ ALTER TABLE `craft_entrytypes`
 -- AUTO_INCREMENT для таблицы `craft_entryversions`
 --
 ALTER TABLE `craft_entryversions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 --
 -- AUTO_INCREMENT для таблицы `craft_fieldgroups`
 --
@@ -2365,22 +2473,22 @@ ALTER TABLE `craft_fieldgroups`
 -- AUTO_INCREMENT для таблицы `craft_fieldlayoutfields`
 --
 ALTER TABLE `craft_fieldlayoutfields`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 --
 -- AUTO_INCREMENT для таблицы `craft_fieldlayouts`
 --
 ALTER TABLE `craft_fieldlayouts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 --
 -- AUTO_INCREMENT для таблицы `craft_fieldlayouttabs`
 --
 ALTER TABLE `craft_fieldlayouttabs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT для таблицы `craft_fields`
 --
 ALTER TABLE `craft_fields`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT для таблицы `craft_info`
 --
@@ -2390,12 +2498,12 @@ ALTER TABLE `craft_info`
 -- AUTO_INCREMENT для таблицы `craft_matrixblocktypes`
 --
 ALTER TABLE `craft_matrixblocktypes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `craft_matrixcontent_gridlayout`
 --
 ALTER TABLE `craft_matrixcontent_gridlayout`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT для таблицы `craft_matrixcontent_menu`
 --
@@ -2435,7 +2543,7 @@ ALTER TABLE `craft_rackspaceaccess`
 -- AUTO_INCREMENT для таблицы `craft_relations`
 --
 ALTER TABLE `craft_relations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 --
 -- AUTO_INCREMENT для таблицы `craft_routes`
 --
@@ -2455,7 +2563,7 @@ ALTER TABLE `craft_sections_i18n`
 -- AUTO_INCREMENT для таблицы `craft_sessions`
 --
 ALTER TABLE `craft_sessions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `craft_shunnedmessages`
 --
@@ -2495,7 +2603,7 @@ ALTER TABLE `craft_taggroups`
 -- AUTO_INCREMENT для таблицы `craft_tasks`
 --
 ALTER TABLE `craft_tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `craft_templatecachecriteria`
 --
