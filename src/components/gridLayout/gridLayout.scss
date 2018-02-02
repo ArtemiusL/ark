@@ -9,14 +9,16 @@
 }
 .item-masonry{
   position: relative;
+  border: 0.5px solid #000;
 }
-.item-masonry__text {
+.item-masonry__content {
   background-color: #fff;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 25px;
 }
 .item-masonry img{
   width: 100%;

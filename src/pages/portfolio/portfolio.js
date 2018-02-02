@@ -1,3 +1,3 @@
-import 'containers/pageScreen';
+import 'components/pageScreen';
 import masonry from 'components/gridLayout';
 import './portfolio.scss';

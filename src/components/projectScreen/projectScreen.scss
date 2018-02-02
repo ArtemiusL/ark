@@ -1,0 +1,11 @@
+.projectScreen {
+  display: flex;
+}
+.projectScreen__photo {
+  width: 30%;
+  flex-shrink: 0;
+}
+.projectScreen__description-item {
+  background-color: #ffffff;
+  padding: 40px;
+}

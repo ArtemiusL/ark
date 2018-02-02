@@ -1,0 +1,17 @@
+<section class="pageScreen" 
+  {% set background = pageScreen.background.first() %}
+  {% if background %}
+  style="background-image: url({{background.getUrl()}});"
+  {% endif %}>
+  <div class="container">
+    {% block header %}
+      {% include "_containers/headerContent" %}
+    {% endblock %}
+    <h1 class="pageScreen-title">
+      {{ pageScreen.screenTitle }}
+    </h1>
+    <div class="pageScreen-caption">
+      {{pageScreen.screenCaption}}
+    </div>
+  </div>
+</section>

@@ -9,6 +9,7 @@ node_modules/
 logs
 *.log
 npm-debug.log*
+jspm_packages/
 
 ### CraftCMS [http://buildwithcraft.com/help/craft-storage-gitignore] ###
 /craft/storage/*
@@ -21,3 +22,6 @@ npm-debug.log*
 /public/static/templates/_webpack.templates
 /public/uploads
 /public/robots.txt
+
+###assets
+filesAssets

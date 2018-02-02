@@ -1,0 +1,15 @@
+<section class="projectScreen">
+  <div class="projectScreen__photo">
+    {% set photo = projectScreen.photo.first() %}
+    <img src="{{photo.getUrl()}}" width="100%" alt="">
+  </div>
+  <div class="projectScreen__description">
+    {% for item in projectScreen.description %}
+      <section class="projectScreen__description-item">
+        <h2>{{item.descriptionTitle}}</h2>
+        <p>{{item.descriptionCaption}}</p>
+      </section>
+    {% endfor %}
+    
+  </div>
+</section>
