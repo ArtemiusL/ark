@@ -1,0 +1,12 @@
+{#
+# footer - global field
+#}
+
+{% set footer = craft.globals.getSetByHandle('footer') %}
+
+<footer class="main-footer">
+  <div class="main-footer__contact">
+    {% include "_components/contact" with { contact: footer.contact } %}
+  </div>
+</footer>
+ 

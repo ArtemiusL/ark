@@ -1,0 +1,29 @@
+.contact {
+}
+.contact__title {
+  a {
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  a:hover::before {
+    width: 100%;
+    transition: 400ms width;
+  }
+  a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+.contact__caption {
+  color: #FffffF;
+  font-size: 16px;
+  line-height: 20px;
+}

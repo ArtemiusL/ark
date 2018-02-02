@@ -20,28 +20,28 @@
       {% case "itemPhoto" %}
         {% switch block.sizeImage.label %}
           {% case "full" %}
-            <div class="item-masonry sizer1">
+            <a href="{{block.gridLink.first.url()}}" class="item-masonry sizer1">
               <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
-            </div>
+            </a>
 
           {% case "large" %}
-            <div class="item-masonry sizer2">
+            <a href="{{block.gridLink.first.url()}}" class="item-masonry sizer2">
               <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
-            </div>
+            </a>
 
           {% case "medium" %}
-            <div class="item-masonry sizer3">
+            <a href="{{block.gridLink.first.url()}}" class="item-masonry sizer3">
               <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
-            </div>
+            </a>
         {% endswitch %}
       {% case "itemText" %}
-        <div class="item-masonry item-masonry--text sizer3">
-              <div class="item-masonry__content">
-                <h3>{{block.gridTitle}}</h3>
-                <p>{{block.gridParagraf}}</p>
-              </div>
-              <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
-            </div>
+        <a href="{{block.gridLink.first.url()}}" class="item-masonry item-masonry--text sizer3">
+          <div class="item-masonry__content">
+            <h3>{{block.gridTitle}}</h3>
+            <p>{{block.gridParagraf}}</p>
+          </div>
+          <img width="100%"  src="{{ block.gridImage.first.url() }}" alt="">
+        </a>
     {% endswitch %}
   {% endfor %}
 </div>

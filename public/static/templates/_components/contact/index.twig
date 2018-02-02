@@ -1,0 +1,11 @@
+{#
+ # contact (required) - contact field
+#}
+{% for item in contact %}
+  <section class="contact">
+  <h2 class="contact__title"><a href="mailto:{{item.contactLink}}" class="contact__link">{{item.contactTitle}}</a></h2>
+  <p class="contact__caption">
+    {{item.contactCaption}}
+  </p>
+  </section>
+{% endfor %}
